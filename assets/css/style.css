@@ -6,7 +6,7 @@
   --border: #e3e0d9;
   --accent: #2b5d8a;
   --accent-soft: #e8eff6;
-  --maxw: 860px;
+  --maxw: 1140px;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
@@ -34,16 +34,15 @@ img { max-width: 100%; }
 /* ---------- Header / nav ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 10;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: blur(8px);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
 .nav {
   max-width: var(--maxw); margin: 0 auto; padding: 0 16px;
-  display: flex; align-items: center; justify-content: space-between; height: 58px;
+  display: flex; align-items: center; justify-content: flex-end; height: 58px;
 }
-.brand { font-family: var(--serif); font-size: 1.15rem; color: var(--text); font-weight: 600; }
-.brand:hover { text-decoration: none; color: var(--accent); }
 .nav-links { display: flex; gap: 22px; align-items: center; list-style: none; margin: 0; padding: 0; }
 .nav-links a { color: var(--muted); font-size: .93rem; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent); text-decoration: none; }
@@ -81,7 +80,7 @@ h3 { font-size: 1.08rem; margin: 0 0 4px; }
 .subtitle { color: var(--muted); margin: 0 0 24px; font-size: 1.02rem; }
 
 /* ---------- About ---------- */
-.about { display: grid; grid-template-columns: 1fr 230px; gap: 36px; align-items: start; }
+.about { display: grid; grid-template-columns: 1fr 280px; gap: 48px; align-items: start; }
 .profile figure { margin: 0; }
 .profile img {
   width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 22%;
